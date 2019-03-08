@@ -1,0 +1,6 @@
+<ul>
+  <p>Fecha: {{ date }}</p>
+  <li *ngFor="let day of days; index as index">
+    {{ day | capitalizeFirst }}
+  </li>
+</ul>
