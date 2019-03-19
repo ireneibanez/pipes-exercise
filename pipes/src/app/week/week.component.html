@@ -1,6 +1,6 @@
 <ul>
-  <p>Fecha: {{ date }}</p>
+  <p>Fecha: {{ date | date: 'dd-MM-yyyy'}}</p>
   <li *ngFor="let day of days; index as index">
-    {{ day | capitalizeFirst }}
+    {{ day | capitalizeFirst | numberWeek:index+1 }}
   </li>
 </ul>

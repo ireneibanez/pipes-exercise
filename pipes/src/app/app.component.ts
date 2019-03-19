@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pipes';
+  text: string = 'Tengo que estudiar mucho en el campus boream';
 }
